@@ -12,7 +12,7 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 const corsoption = {
-    origin: "https://job-portal-apvf.vercel.app/",
+    origin: "https://job-portal-apvf.vercel.app",
     credentials: true
 }
 app.use(cors(corsoption))
