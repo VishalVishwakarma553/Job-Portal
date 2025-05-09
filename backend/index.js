@@ -9,13 +9,13 @@ import companyRoutes from "./routes/company.route.js"
 import applicationRoutes from "./routes/application.route.js"
 dotenv.config()
 const app = express()
-app.use(express.json())
-app.use(cookieParser())
 const corsoption = {
     origin: "https://job-portal-apvf.vercel.app",
     credentials: true
 }
 app.use(cors(corsoption))
+app.use(express.json())
+app.use(cookieParser())
 
 
 //api's
