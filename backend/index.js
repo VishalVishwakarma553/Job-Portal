@@ -12,10 +12,11 @@ const app = express()
 app.use(express.json())
 app.use(cookieParser())
 const corsoption = {
-    origin: "http://localhost:5173",
+    origin: ["http://localhost:5173", "https://job-portal-apvf.vercel.app/"],
     credentials: true
 }
 app.use(cors(corsoption))
+
 
 //api's
 app.use("/api/v1/user", userRoutes)
