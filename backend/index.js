@@ -24,6 +24,12 @@ app.use("/api/v1/job", jobRoutes)
 app.use("/api/v1/company", companyRoutes)
 app.use("/api/v1/application",applicationRoutes)
 
+app.get("/", (req, res) => {
+    res.send({
+        message: "Backend is running"
+    })
+})
+
 const PORT = process.env.PORT
 app.listen(PORT, () => {
     connectdb()
