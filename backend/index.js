@@ -10,7 +10,7 @@ import applicationRoutes from "./routes/application.route.js"
 dotenv.config()
 const app = express()
 const corsoption = {
-    origin: "https://job-portal-apvf.vercel.app",
+    origin: "",
     credentials: true
 }
 app.use(cors(corsoption))
