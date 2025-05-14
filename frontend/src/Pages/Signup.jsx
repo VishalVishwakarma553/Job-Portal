@@ -34,7 +34,6 @@ const Signup = () => {
     try {
       setLoading(true);
       const res = await axiosInstance.post("/user/signup", formData);
-      console.log(res.data.message);
       if (res.data?.message){
         navigate("/login")
       }

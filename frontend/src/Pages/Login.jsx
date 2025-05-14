@@ -25,7 +25,6 @@ const Login = () => {
     try{
       setLoading(true)
       const res = await axiosInstance.post("/user/login", Input)
-      console.log(res)
       dispatch(setUser(res.data.user))
       setToast({show: true, message: res.data.message, type: "success"})
 
@@ -33,7 +32,6 @@ const Login = () => {
         setToast({show: false, message: "", type: ""})
       }, 3000)
       navigate("/")
-      console.log(user)
     }catch(error){
       console.log(error)
       setToast({show: true, message: error.response?.data?.message, type: "error" })

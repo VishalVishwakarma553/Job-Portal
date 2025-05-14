@@ -9,7 +9,6 @@ const JobCard = ({job}) => {
     const differenceDays = currentTime - createdTime
     return Math.floor(differenceDays/(1000*24*60*60))
   }
-  console.log(job)
   return (
     <motion.div className="p-5 rounded-md shadow-md shadow-zinc-400 border border-zinc-300 cursor-pointer"
     initial={{opacity:0, x:100}}

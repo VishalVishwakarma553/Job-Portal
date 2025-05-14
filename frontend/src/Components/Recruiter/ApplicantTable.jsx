@@ -8,7 +8,6 @@ const ApplicantTable = () => {
   const statusHandler = async (currentStatus, applicantId) => {
     try{
       const res = await axiosInstance.post(`/application/updateStatus/${applicantId}`, {status:currentStatus.toLowerCase()})
-      console.log(res.data.newApplication)
     }catch(error){
       console.log(error)
     }

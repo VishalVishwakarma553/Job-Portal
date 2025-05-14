@@ -25,7 +25,6 @@ const Navbar = () => {
       console.log("error in logout frontend", error);
     }
   };
-  console.log(user)
   return (
     <>
       <div className=" border-b-2 border-base-300 backdrop-blur-lg bg-base-100/80 mb-3">

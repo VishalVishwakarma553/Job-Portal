@@ -9,7 +9,6 @@ const ViewProfile = () => {
   const { user} = useSelector((store) => store.auth);
   const [loading, setLoading] = useState(false)
   const dispatch = useDispatch();
-  // console.log(user)
   const skills = user?.profile?.skills
   const [Toast, setToast] = useState({ show: false, message: "", type: "" });
   const [updateInput, setUpdateInput] = useState({
@@ -40,7 +39,6 @@ const ViewProfile = () => {
       setLoading(true)
       const res = await axiosInstance.post("/user/profile/update", formData);
       if (res.data?.user) {
-        console.log(res.data.user);
         dispatch(setUser(res.data.user));
         setToast({ show: true, message: res.data?.message, type: "success" });
         setTimeout(()=>{

@@ -11,7 +11,6 @@ const useGetRecruiterCreatedJob = () => {
                 const res = await axiosInstance.get("/job/getRecruiterJob")
                 if (res.data.jobByRecruiter){
                     dispatch(setRecruiterJob(res?.data?.jobByRecruiter))
-                    console.log(res?.data?.jobByRecruiter)
                 }
             }catch(error){
                 console.log("Error in getting all jobs hook", error)

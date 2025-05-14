@@ -20,7 +20,6 @@ const Jobs = () => {
         job?.title?.toLowerCase().includes(InputFilterJob.toLowerCase())
       );
     });
-    console.log("filteredJobsBrowse in use", filteredJobsBrowse);
     setfilterJobBrowse(filteredJobsBrowse);
   }, [InputFilterJob, job]);
   return (
