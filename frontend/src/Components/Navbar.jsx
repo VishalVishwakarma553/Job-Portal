@@ -72,7 +72,7 @@ const Navbar = () => {
             </ul>
             <div className="flex items-center">
             {!user ? (
-              <div className="sm:flex gap-2 hidden">
+              <div className="flex gap-2 ">
                 <Link to="/signup">
                   <button className="btn btn-soft btn-error">Signup</button>
                 </Link>
@@ -145,6 +145,8 @@ const Navbar = () => {
                 </div>
               </div>
             )}
+
+
             <div className="dropdown dropdown-bottom dropdown-end sm:hidden">
               <div tabIndex={0} role="button" className="">
               <AlignRight className="w-6 h-6 active:w-5 active:h-5 mx-3" />
