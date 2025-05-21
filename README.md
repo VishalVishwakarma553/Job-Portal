@@ -89,7 +89,7 @@ cd Job-Portal
 
 Experience StudyMate in action! Visit our live demo:
 
-[![GetHired Demo](https://img.shields.io/badge/StudyMate-Live%20Demo-blue?style=for-the-badge)](https://job-portal-apvf.vercel.app/)
+[![GetHired Demo](https://img.shields.io/badge/GetHired-Live%20Demo-blue?style=for-the-badge)](https://job-portal-apvf.vercel.app/)
 
 ---
 
